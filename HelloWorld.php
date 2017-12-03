@@ -11,25 +11,25 @@ Hello again<br>
 <?PHP
 	echo "Hello World<br><br>";
 
-	//$servername = "interviewx.mysql.database.azure.com";
-	//$username = "peterszchechina@interviewx";
-	//$password = "Feynman6#!";
-	//$dbname = "interviewx";
+	$servername = "interviewx.mysql.database.azure.com";
+	$username = "peterszchechina@interviewx";
+	$password = "Feynman6#!";
+	$dbname = "interviewx";
 
 	//$servername = "eu-cdbr-azure-west-b.cloudapp.net";
 	//$username = "peterszchechina@interviewx";
 	//$password = "Feynman6#!";
 	//$dbname = "interview";
 
-	//$connection = new mysql($servername, $username, $password, $dbname);
+	$connection = new mysql($servername, $username, $password, $dbname);
 
 	//$connection=mysqli_init(); 
 	//[mysqli_ssl_set($connection, NULL, NULL, {ca-cert filename}, NULL, NULL);] 
 	//mysqli_real_connect($connection, $servername, {username@servername}, {your_password}, {your_database}, {your_port});
 
-	$connection=mysqli_init(); 
-	mysqli_ssl_set($connection, NULL, NULL, {ca-cert filename}, NULL, NULL); 
-	mysqli_real_connect($connection, "interviewx.mysql.database.azure.com", "peterszchechina@interviewx", "Feynman6#!", "interviewx", 3306);
+	//$connection=mysqli_init(); 
+	//mysqli_ssl_set($connection, NULL, NULL, {ca-cert filename}, NULL, NULL); 
+	//mysqli_real_connect($connection, "interviewx.mysql.database.azure.com", "peterszchechina@interviewx", "Feynman6#!", "interviewx", 3306);
 	
 	if ($connection->connect_error) {
 		die("Connection failed: " . $connection->connect_error);
