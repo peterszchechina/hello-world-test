@@ -16,12 +16,14 @@ th{
 	font-weight: bold;
 	color: gray;
 	text-align: center-left;
-	background-color: #0f0000;
+	background-color: #ffaaaa;
+	border-radius: 3px;
 }
 td{
 	font-family: "Arial", Arial, sans-serif;
 	font-size: 12px;
 	color: gray;
 	text-align: center-left;
-	background-color: #0f0000;
+	background-color: #ffaaaa;
+	border-radius: 3px;
 }
