@@ -9,12 +9,12 @@ Hello World Hello<br>
 Hello Hello Hello<br>
 
 <?PHP
-	echo "Hello World<br><br>";
+	echo "Hello World Hello<br><br>";
 
 	$servername = "interviewx.mysql.database.azure.com";
 	$username = "peterszchechina@interviewx";
 	$password = "Feynman6#!";
-	$dbname = "interviewx";
+	$dbname = "interview";
 
 	$conn = mysqli_init();
 	
