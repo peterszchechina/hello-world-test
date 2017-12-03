@@ -8,7 +8,8 @@
 <h1>Peter&#39;s PHP Page<br></h1>
 
 <?PHP
-	echo "<h2>Welcome<br><br> This PHP page, hosted on Azure, reads data from a MySQL database, also hosted on Azure, and places it into the table shown below.</h2><br>,<br>";
+	echo "<h2>Welcome<br><br> This PHP page, hosted on Azure, reads data from a MySQL database, also hosted on Azure, and places it into the table shown below.</h2><br><br>";
+	echo "<h2>The source code for this page and its accompanying CSS file is kept on GitHub and updated via the GitHub desktop client.</h2><br><br>"
 
 	$servername = "interviewx.mysql.database.azure.com";
 	$username = "peterszchechina@interviewx";
@@ -18,7 +19,7 @@
 	$conn = mysqli_init();
 	
 	if (!$conn){
-		die("mysqli_init failed");
+		die("Failed to create a connection.");
 	}
 	
 	//mysqli_ssl_set($conn,NULL,NULL, "/var/www/html/BaltimoreCyberTrustRoot.crt.pem", NULL, NULL) ;
@@ -34,7 +35,7 @@
 	$res = mysqli_query($conn, $sql);
 
 	echo"<table>";
-	echo "<tr><th>Interview</th> <th>Title</th> <th>Notes</th></tr>";	
+	echo "<tr><th>Int</th> <th>Title</th> <th>Notes</th></tr>";	
 	while ($row = mysqli_fetch_assoc($res)) {
 		//var_dump($row);
 		echo "<tr><td>". $row["idInterview"]. "</td><td>". $row["interviewTitle"]. "</td><td>".  $row["interviewText"]. "</td></tr>";
