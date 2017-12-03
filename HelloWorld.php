@@ -6,18 +6,30 @@
 <BODY>
 
 Hello World<br>
-Hello World again<br>
 
 <?PHP
 	echo "Hello World<br><br>";
 
 	$servername = "eu-cdbr-azure-west-b.cloudapp.net";
-	$username = "peterszchechina@interview";
+	$username = "peterszchechina@interviewx";
 	$password = "Feynman6#!";
 	$dbname = "interview";
 
-	$connection = new mysql($servername, $username, $password, $dbname);
+	//$servername = "eu-cdbr-azure-west-b.cloudapp.net";
+	//$username = "peterszchechina@interviewx";
+	//$password = "Feynman6#!";
+	//$dbname = "interview";
 
+	//$connection = new mysql($servername, $username, $password, $dbname);
+
+	//$connection=mysqli_init(); 
+	//[mysqli_ssl_set($connection, NULL, NULL, {ca-cert filename}, NULL, NULL);] 
+	//mysqli_real_connect($connection, $servername, {username@servername}, {your_password}, {your_database}, {your_port});
+
+	$connection=mysqli_init(); 
+	mysqli_ssl_set($connection, NULL, NULL, {ca-cert filename}, NULL, NULL); 
+	mysqli_real_connect($connection, "interviewx.mysql.database.azure.com", "peterszchechina@interviewx", "Feynman6#!", "interviewx", 3306);
+	
 	if ($connection->connect_error) {
 		die("Connection failed: " . $connection->connect_error);
 	}
