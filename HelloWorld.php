@@ -6,14 +6,15 @@
 <BODY>
 
 Hello World<br>
+Hello again<br>
 
 <?PHP
 	echo "Hello World<br><br>";
 
-	$servername = "eu-cdbr-azure-west-b.cloudapp.net";
+	$servername = "interviewx.mysql.database.azure.com";
 	$username = "peterszchechina@interviewx";
 	$password = "Feynman6#!";
-	$dbname = "interview";
+	$dbname = "interviewx";
 
 	//$servername = "eu-cdbr-azure-west-b.cloudapp.net";
 	//$username = "peterszchechina@interviewx";
