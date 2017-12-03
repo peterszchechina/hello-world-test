@@ -6,15 +6,16 @@
 <BODY>
 
 Hello World<br>
+Hello World<br>
 
 <?PHP
 	echo "Hello World<br><br>";
 
 	$servername = "eu-cdbr-azure-west-b.cloudapp.net";
-	$username = "peterszchechina@interview";
+	$username = "peterszchechina@interviewx";
 	$password = "Feynman6#!";
 	$dbname = "interview";
-	
+
 	$connection = new mysql($servername, $username, $password, $dbname);
 
 	if ($connection->connect_error) {
