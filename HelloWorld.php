@@ -6,7 +6,7 @@
 <BODY>
 
 Hello World<br>
-Hello World<br>
+Hello World again<br>
 
 <?PHP
 	echo "Hello World<br><br>";
