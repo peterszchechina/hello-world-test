@@ -11,10 +11,10 @@ Hello World<br>
 	echo "Hello World<br><br>";
 
 	$servername = "eu-cdbr-azure-west-b.cloudapp.net";
-	$username = "peterszchechina";
+	$username = "peterszchechina@interview";
 	$password = "Feynman6#!";
 	$dbname = "interview";
-
+	
 	$connection = new mysql($servername, $username, $password, $dbname);
 
 	if ($connection->connect_error) {
