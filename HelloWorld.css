@@ -10,6 +10,9 @@ h2{
 	color: red;
 	text-align: center-left;
 }
+table{
+	width: 70%;
+}
 th{
 	font-family: "Arial", Arial, sans-serif;
 	font-size: 12px;
