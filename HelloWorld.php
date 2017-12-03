@@ -52,9 +52,11 @@ Hello Hello Hello<br>
 	//$result = $conn->query($sql);
 	$res = mysqli_query($conn, $sql);
 
-	echo "Interview, Title, Notes";	
+	echo "Interview, Title, Notes<br>";	
 	while ($row = mysqli_fetch_assoc($res)) {
-		var_dump($row);
+		//var_dump($row);
+		echo $row["idInterview"]. $row["interviewTitle"]. $row["interviewText"]. "<br>";
+
 	}	
 
 	//if($result->num_rows > 0){
