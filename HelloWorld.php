@@ -8,7 +8,7 @@
 <h1>Peter&#39;s PHP Page<br></h1>
 
 <?PHP
-	echo "Welcome<br><br> This PHP page, hosted on Azure, reads data from a MySQL database, also hosted on Azure, and places it into the table shown below.<br>,<br>";
+	echo "<h2>Welcome<br><br> This PHP page, hosted on Azure, reads data from a MySQL database, also hosted on Azure, and places it into the table shown below.</h2><br>,<br>";
 
 	$servername = "interviewx.mysql.database.azure.com";
 	$username = "peterszchechina@interviewx";

@@ -4,3 +4,9 @@ h1 {
 	color: blue;
 	text-align: center-left;
 }
+h2{
+	font-family: "Arial", Arial, sans-serif;
+	font-size: 12px;
+	color: red;
+	text-align: center-left;
+}
