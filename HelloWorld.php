@@ -8,7 +8,7 @@
 <h1>Peter&#39;s PHP Page<br></h1>
 
 <?PHP
-	echo "<h2>Welcome<br><br> This PHP page, hosted on Azure, reads data from a MySQL database, also hosted on Azure, and places it into the table shown below.</h2><br>";
+	echo "<h2>Welcome<br><br> This PHP page, hosted on Azure, reads data from a MySQL database, also hosted on Azure, and places it into the table shown below.</h2>";
 	echo "<h2>The source code for this page and its accompanying CSS file is kept on GitHub and updated via the GitHub desktop client. Deployment to the Azure site is synchronised directly from GitHub.</h2><br>";
 
 	$servername = "interviewx.mysql.database.azure.com";
