@@ -6,7 +6,7 @@
 <BODY>
 
 Hello World<br>
-Hello again<br>
+Hello Hello<br>
 
 <?PHP
 	echo "Hello World<br><br>";
@@ -17,7 +17,7 @@ Hello again<br>
 	$dbname = "interviewx";
 
 	$conn = mysqli_init();
-	//mysqli_ssl_set($conn,NULL,NULL, "/var/www/html/BaltimoreCyberTrustRoot.crt.pem", NULL, NULL) ;
+	mysqli_ssl_set($conn,NULL,NULL, "/var/www/html/BaltimoreCyberTrustRoot.crt.pem", NULL, NULL) ;
 	mysqli_real_connect($conn, $host, $username, $password, $db_name, 3306);
 
 	if (mysqli_connect_errno($conn)) {
