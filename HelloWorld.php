@@ -5,10 +5,10 @@
 </HEAD>
 <BODY>
 
-<h1>Peter&quot;s PHP Page<br></h1>
+<h1>Peter&#39;s PHP Page<br></h1>
 
 <?PHP
-	echo "Hello World<br><br>";
+	echo "Welcome<br><br> This PHP page, hosted on Azure, reads data from a MySQL database, also hosted on Azure, and places it into the table shown below.<br>,<br>";
 
 	$servername = "interviewx.mysql.database.azure.com";
 	$username = "peterszchechina@interviewx";
